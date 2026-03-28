@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: YOUR_GOOGLE_CLIENT_ID
+            client-secret: YOUR_GOOGLE_CLIENT_SECRET
+            scope:
+              - openid
+              - profile
+              - email
+
+#          github:
+#            client-id: YOUR_GITHUB_CLIENT_ID
+#            client-secret: YOUR_GITHUB_CLIENT_SECRET
+#            scope:
+#              - read:user
+#              - user:email
+
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://openidconnect.googleapis.com/v1/userinfo
+            user-name-attribute: sub
