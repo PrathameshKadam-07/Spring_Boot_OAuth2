@@ -100,6 +100,8 @@ http://localhost:8080
 ---
 
 ### 📂 Project Structure
+
+```
 springboot-oauth/
 │── src/main/java/com/example/oauth/
 │   ├── config/
@@ -111,3 +113,5 @@ springboot-oauth/
 │── src/main/resources/
 │   ├── application.yml
 │── pom.xml
+
+```
